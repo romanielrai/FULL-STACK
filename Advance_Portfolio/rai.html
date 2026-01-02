@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Advanced Portfolio</title>
+  <link rel="stylesheet" href="rai.css">
+</head>
+<body>
+  <!-- Canvas motion background (gesture reactive) -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Optional video background fallback for older devices -->
+  <video id="video-background" autoplay loop muted playsinline aria-hidden="true">
+    <source src="assets/background-loop.mp4" type="video/mp4">
+  </video>
+
+  <div class="page-wrap">
+    <header id="hero">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-left">
+          <a class="logo" href="#">YourName</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">☰</button>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Your Name</h1>
+        <p class="tagline">Frontend Developer — Motion & Interactive UI</p>
+        <p class="hero-cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>A short, professional paragraph about yourself. Summarize your experience, focus areas, and what kind of projects you enjoy building. Keep it concise and scannable.</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3 (Grid &amp; Flex)</div>
+            <div class="skill">JavaScript (ES6+)</div>
+            <div class="skill">Accessible UI</div>
+            <div class="skill">Motion & Interaction</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div id="projects-grid">
+            <article class="project-card">
+              <img src="assets/project1.jpg" alt="Project 1 screenshot">
+              <h3>Project Title 1</h3>
+              <p>Short blurb: tech used, role, and outcomes.</p>
+              <p class="project-links"><a href="#">Live</a> • <a href="#">Code</a></p>
+            </article>
+
+            <article class="project-card">
+              <img src="assets/project2.jpg" alt="Project 2 screenshot">
+              <h3>Project Title 2</h3>
+              <p>Short blurb describing what the project does and your responsibilities.</p>
+              <p class="project-links"><a href="#">Live</a> • <a href="#">Code</a></p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <form id="contact-form-id" novalidate>
+            <label for="name">Name *</label>
+            <input id="name" name="name" required>
+
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <div id="form-message" aria-live="polite"></div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Your Name — Built with HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="rai.js"></script>
+</body>
+</html>
+

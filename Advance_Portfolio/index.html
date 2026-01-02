@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romaniel Rai | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="#" class="logo">Romaniel Rai</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section (Hero with Video Background) -->
+  <section class="home section" id="home">
+    <video autoplay loop muted playsinline id="video-background">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="home-content">
+      <h1 class="home-title">Hi, I'm <span class="type-text"></span></h1>
+      <p class="home-subtitle">Frontend Developer & UI/UX Enthusiast</p>
+      <div class="home-buttons">
+        <a href="#projects" class="btn">View Work</a>
+        <a href="#contact" class="btn-secondary">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-indicator" id="scroll-indicator"></div>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <div class="about-img">
+        <img src="IMG_5340[1].jpg" alt="Profile">
+      </div>
+      <div class="about-content">
+        <p>I'm a passionate frontend developer who loves clean code, beautiful design, and creating experiences that users love. Proficient in HTML, CSS, JavaScript, React.</p>
+        <div class="about-buttons">
+          <a href="#" class="btn">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (Flexbox) -->
+  <section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">HTML5</div>
+      <div class="skill-item">CSS3</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">React</div>
+      <div class="skill-item">Git & GitHub</div>
+      <div class="skill-item">Responsive Design</div>
+      <div class="skill-item">Figma</div>
+      <div class="skill-item">Tailwind CSS</div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Grid) -->
+  <section class="projects section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300" alt="Project 1">
+        <h3>E-Commerce Platform</h3>
+        <p>Full-stack shopping app built with React and Node.js</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=300" alt="Project 2">
+        <h3>Task Manager</h3>
+        <p>Responsive todo app with drag-and-drop functionality</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=300" alt="Project 3">
+        <h3>Weather Dashboard</h3>
+        <p>Real-time weather app using OpenWeather API</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300" alt="Project 4">
+        <h3>Portfolio Website</h3>
+        <p>This very site! Built with HTML, CSS Grid/Flexbox & JS</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (Video-inspired) -->
+  <section class="services section" id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="ri-code-line"></i>
+        <h3>Web Development</h3>
+        <p>Custom websites and applications</p>
+      </div>
+      <div class="service-card">
+        <i class="ri-brush-line"></i>
+        <h3>UI/UX Design</h3>
+        <p>User-centered design solutions</p>
+      </div>
+      <div class="service-card">
+        <i class="ri-responsive-line"></i>
+        <h3>Responsive Sites</h3>
+        <p>Mobile-first responsive development</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Swiper Slider) -->
+  <section class="testimonials section" id="testimonials">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="swiper testimonials-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <p>"Amazing work! Transformed our ideas into reality."</p>
+            <h4>Client A</h4>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <p>"Professional and creative developer."</p>
+            <h4>Client B</h4>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <p>"Exceeded expectations on every project."</p>
+            <h4>Client C</h4>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form" id="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <span class="error" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required>
+        <span class="error" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <span class="error" id="message-error"></span>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div id="form-message"></div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Alex Rivera. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional Audio for Project Hover -->
+  <audio id="hover-sound" preload="auto">
+    <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+Dyvm4iQFH+5oP9fD8mUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+Dyvm4iQFH+5oP9fD8= " type="audio/wav">
+  </audio>
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+</body>
+</html>

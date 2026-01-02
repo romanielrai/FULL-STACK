@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="romaniel.css">
+    </head>
+<body>
+
+    <header id="hero">
+        <video autoplay loop muted id="video-background">
+            <source src="background-loop.mp4" type="video/mp4">
+            Your browser does not support the video tag. [cite: 31]
+        </video>
+
+        <nav class="navbar">
+            <span class="logo">My Portfolio</span> [cite: 34]
+            <ul class="nav-links"> [cite: 35]
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+                &#9776; </button> [cite: 40, 41]
+        </nav>
+
+        <div class="hero-content">
+            <h1>[Your Name]</h1>
+            <p>Frontend Developer & UI/UX Enthusiast</p>
+        </div>
+    </header>
+
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>A brief introduction...</p>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h2>My Skills</h2>
+        <div class="skills-flex-container">
+            </div>
+    </section>
+
+    <section id="projects" class="content-section">
+        <h2>Featured Projects</h2>
+        <div id="projects-grid">
+            <div class="project-card">Project 1</div> [cite: 91]
+            <div class="project-card">Project 2</div>
+            <div class="project-card">Project 3</div>
+            </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form-id">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-message" style="margin-top: 15px;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p> [cite: 17]
+    </footer>
+
+    <script src="romaniel.js"></script>
+</body>
+</html>
