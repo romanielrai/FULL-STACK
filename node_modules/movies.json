@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "id": "2",
+      "title": "Pulp Fiction",
+      "genre": "Crime",
+      "year": 1994
+    },
+    {
+      "id": "3",
+      "title": "Dune",
+      "genre": "Sci-Fi",
+      "year": 2021
+    },
+    {
+      "id": "4",
+      "title": "ironman",
+      "genre": "comedy",
+      "year": 2008
+    },
+    {
+      "id": "75c8",
+      "title": "heloo",
+      "genre": "",
+      "year": 2
+    },
+    {
+      "id": "67ba",
+      "title": "hello",
+      "genre": "comedy",
+      "year": 2008
+    },
+    {
+      "id": "8b4d",
+      "title": "iron man",
+      "genre": "",
+      "year": 2005
+    }
+  ]
+}
